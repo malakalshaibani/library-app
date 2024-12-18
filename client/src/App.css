@@ -1,0 +1,645 @@
+.App {
+  text-align: center;
+  background-color: rgb(241, 206, 162);
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: rgb(238, 189, 129);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.circular_image {
+  float: left;
+  margin-left: 125px;
+  margin-top: 20px;
+  width: 100px;
+  height: 100px;
+  justify-content: center;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: rgb(255, 200, 0);
+}
+
+a:visited {
+  color: rgb(137, 78, 7);
+}
+
+a:hover {
+  color: #fcfcfc;
+}
+
+.login {
+  align-items: center;
+  justify-content: center;
+}
+
+.div-form {
+  border-style: solid;
+  border-width: thin;
+  font-size: 24px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  background-color: rgb(251, 239, 226);
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  border-color: #080b0f;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #05090d;
+}
+
+.login-form input {
+  margin: 2px;
+}
+
+.smalltext {
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(67, 41, 9);
+}
+
+.h {
+  font-size: 100px;
+  font-weight: bold;
+  color: #ededf4;
+}
+
+.hh {
+  font-size: 28px;
+  font-weight: bold;
+  color: #92b6e0;
+  font-family: initial;
+  font-style: italic;
+  font-stretch: extra-expanded;
+}
+
+.columndiv1 {
+  border-color: #102742;
+  font-size: xx-large;
+  background-color: #d1e3ff;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.columndiv2 {
+  border-color: #102742;
+  font-size: xx-large;
+  height: auto;
+  padding: 20px;
+}
+
+.loginImage {
+  height: 100%;
+  width: 100%;
+}
+
+.appTitle {
+  text-align: center;
+  color: #e8e8ef;
+}
+
+.formrow {
+  background-color: rgb(241, 206, 162);
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.side {
+  display: flex;
+  vertical-align: top;
+}
+
+.checkbox {
+  width: 25px;
+  height: 25px;
+}
+
+.button {
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  background-color: #d2964c;
+  border-style: none;
+  color: #ffffff;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 10;
+  margin-left: 10px;
+}
+
+.navigation {
+  background-color: rgb(209, 227, 255);
+  height: 75px;
+  font-weight: bolder;
+  color: #fcfcfc;
+}
+
+.footer {
+  display: flex;
+  background-color: #d1e3ff;
+  height: 100px;
+  color: rgb(238, 189, 129);
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  flex-shrink: 0;
+}
+
+.socialmedia {
+  width: 100px;
+  height: 100px;
+}
+
+.userImage {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.userInfos {
+  padding: 20px;
+  text-align: center;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  flex-grow: 1;
+  min-height: 300px;
+}
+
+.sharePosts {
+  padding-top: 10px;
+  height: 200px;
+  border-style: solid;
+  border-width: thin;
+  margin-top: 10px;
+  border-color: #fcfcfc;
+  text-align: center;
+}
+
+.inputPost {
+  margin-right: 10px;
+  width: 80%;
+  border-color: #fcfcfc;
+}
+
+.input-button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.postButton {
+  background-color: rgb(70, 42, 9);
+}
+
+.dept {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+.selectDept .selectDept {
+  width: 10%;
+}
+
+.postUserImage {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+
+.postsContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+}
+
+.postMsg {
+  padding: 20px;
+  border: 1px solid #d1e3ff;
+}
+
+.postedBy {
+  padding: 10px;
+  background-color: #d1e3ff;
+  border-radius: 10px;
+}
+
+.postByName {
+  font-weight: bolder;
+  font: optional;
+}
+
+.postDate {
+  margin-left: 5px;
+}
+
+.navs {
+  padding: 10px;
+}
+
+.userName {
+  font-weight: bold;
+}
+
+.likes {
+  padding: 5px;
+}
+
+.error {
+  color: rgb(197, 48, 48);
+  font-size: small;
+}
+
+.header {
+  display: flex;
+  align-items: center; /* Vertically align items */
+  padding: 10px;
+  background-color: #fcfcfc;
+  color: #ffffff;
+}
+
+.nav {
+  display: flex;
+  align-items: center; /* Vertically align items */
+}
+
+.logo {
+  height: 50px; /* Adjust the logo size as needed */
+}
+
+.nav a {
+  text-decoration: none; /* Remove underline */
+  color: #ffffff; /* Set text color */
+  margin: 0 15px; /* Add spacing between links */
+}
+
+.nav a:hover {
+  color: #007bff; /* Change color on hover (optional) */
+}
+
+/* Cart Section Styling */
+.cartContainer {
+  background-color: #FDF6E3; /* Light beige */
+  max-width: 400px;
+  margin: auto;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.cartContainer h2 {
+  text-align: center;
+  color: #333;
+}
+
+.cartContainer .itemCard {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1rem;
+}
+
+.cartContainer .itemCard img {
+  width: 200px;
+  height: 200px;
+  margin-right: 1rem;
+  border-radius: 1px;
+}
+
+.cartContainer .itemCard .details {
+  flex: 1;
+}
+
+.cartContainer .itemCard .title {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.cartContainer .itemCard .price {
+  margin: 0.5rem 0;
+  color: #555;
+}
+
+.cartContainer .itemCard .quantityLabel {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.cartContainer .itemCard .quantityInput {
+  width: 50px;
+  margin-left: 0.5rem;
+}
+
+.cartContainer .itemCard .deleteButton {
+  background-color: #D9534F;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.cartContainer .totalSection {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.cartContainer .totalText {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.cartContainer .totalPrice {
+  font-weight: bold;
+}
+
+.cartContainer .buyButton {
+  background-color: #D9534F;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cartContainer .buyButton:hover {
+  background-color: #c12e31;
+}
+/* General styles for the BookDetailPage */
+.book-detail-page {
+  background-color:  rgb(241, 206, 162);
+  padding: 40px 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.book-detail-container {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color:  #FDF6E3;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.book-image-container {
+  flex: 1;
+  padding: 10px;
+}
+
+.book-image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.book-info {
+  flex: 2;
+  padding: 10px 20px;
+}
+
+.book-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.book-author {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.book-details {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.book-price {
+  font-size: 1.3rem;
+  color: #007b5e;
+  margin-bottom: 2rem;
+}
+
+.book-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.btn {
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-add-to-cart {
+  background-color: #007b5e;
+  color: rgb(67, 41, 9);
+}
+
+.btn-add-to-cart:hover {
+  background-color:rgb(67, 41, 9);
+}
+
+.btn-feedback {
+  background-color: #17a2b8;
+  color: rgb(67, 41, 9);
+}
+
+.btn-feedback:hover {
+  background-color:rgb(67, 41, 9);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .book-detail-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .book-image-container {
+    text-align: center;
+  }
+
+  .book-title {
+    font-size: 1.5rem;
+  }
+
+  .book-actions {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
+
+/* General Styles */
+.homepage-container {
+  background-color: #fdf8e3;
+  min-height: 100vh;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.homepage h1 {
+  font-size: 2rem;
+  text-align: center;
+  color: #6d6a75;
+  margin-bottom: 20px;
+}
+
+/* Search Bar */
+.search-input-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  width: 50%;
+  padding: 10px 40px 10px 15px; /* Adjust padding for the icon */
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  outline: none;
+  font-size: 1rem;
+}
+
+.search-icon {
+  position: absolute;
+  right: 27%; /* Position inside the search bar */
+  color: #888;
+  font-size: 1.2rem;
+}
+
+/* Trending Books */
+.books-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.books-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.book-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  padding: 10px;
+  text-align: center;
+  width: 150px;
+  transition: transform 0.3s ease;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+}
+
+.book-card h6 {
+  margin: 10px 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.book-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* Trending Section */
+.trending-books-container {
+  margin-top: 20px;
+}
+
+.trending-books-container h3 {
+  font-size: 1.3rem;
+  color: #6d6a75;
+  text-align: center;
+  margin-bottom: 10px;
+}

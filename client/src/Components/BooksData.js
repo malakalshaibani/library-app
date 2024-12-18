@@ -1,0 +1,68 @@
+const BooksData = [
+    {
+        id: 'e1',
+        title: 'I Love You to the Moon and Back',
+        author: 'Amelia Hepworth',
+        pic: 'https://images-na.ssl-images-amazon.com/images/I/8144Vic9C5L._AC_UL210_SR195,210_.jpg',
+        price: '$12.99',
+        details: 'A heartwarming story for young children about the bond between a parent and a child.',
+    },
+    {
+        id: 'e2',
+        title: 'Ugly Love: A Novel',
+        author: 'Colleen Hoover',
+        pic: 'https://m.media-amazon.com/images/I/41mBCtaJ1XL._SY291_BO1,204,203,200_QL40_FMwebp_.jpg',
+        price: '$15.99',
+        details: 'A poignant and captivating love story filled with raw emotion and deep themes of love, loss, and healing.',
+    },
+    {
+        id: 'e3',
+        title: 'Goodnight Moon',
+        author: 'Margaret Wise Brown',
+        pic: 'https://m.media-amazon.com/images/I/91WuHblNkEL._AC_UY436_FMwebp_QL65_.jpg',
+        price: '$6.99',
+        details: 'A beloved classic bedtime story that features a little bunny saying goodnight to everything around him.',
+    },
+    {
+        id: 'e4',
+        title: 'A Thousand Boy Kisses',
+        author: 'Tillie Cole',
+        pic: 'https://m.media-amazon.com/images/I/51yZQoybCsL._SY346_.jpg',
+        price: '$13.49',
+        details: 'A heart-wrenching romance about love, loss, and learning to live again after losing someone special.',
+    },
+    {
+        id: 'e5',
+        title: 'Pete the Cat: Snow Daze',
+        author: 'James Dean',
+        pic: 'https://m.media-amazon.com/images/P/0062404261.01._SCLZZZZZZZ_SX500_.jpg',
+        price: '$7.99',
+        details: 'Join Pete the Cat in his snowy adventures as he navigates through fun and learning moments in winter.',
+    },
+    {
+        id: 'e6',
+        title: 'Life Skills for Kids',
+        author: 'Karrn Harris',
+        pic: 'https://m.media-amazon.com/images/I/71TPAH06G5L.jpg',
+        price: '$10.99',
+        details: 'This guide teaches kids essential life skills that will help them grow into confident and capable individuals.',
+    },
+    {
+        id: 'e7',
+        title: 'Knight Owl',
+        author: 'Christopher Denise',
+        pic: 'https://m.media-amazon.com/images/I/B1G348UJ1rL.jpg',
+        price: '$11.99',
+        details: 'A charming story about a young owl who becomes a knight and learns about bravery and friendship.',
+    },
+    {
+        id: 'e8',
+        title: 'Never Stop Dreaming',
+        author: 'Ellen Miles',
+        pic: 'https://m.media-amazon.com/images/I/71GrqBmQK2L.jpg',
+        price: '$9.99',
+        details: 'An inspiring story that encourages children to follow their dreams, no matter how big they may seem.',
+    },
+];
+
+export default BooksData;

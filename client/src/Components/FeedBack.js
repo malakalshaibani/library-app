@@ -8,7 +8,7 @@ import { FaThumbsUp } from "react-icons/fa6";
 import { deletePost } from "../Features/PostSlice";
 import { updatePost } from "../Features/PostSlice";
 
-const FeedPage = () => {
+const FeedBack = () => {
   const [postMsg, setPostMsg] = useState("");
   const [editingPostId, setEditingPostId] = useState(null); // Track the post being edited
   const [editMessage, setEditMessage] = useState(""); // Store the new message for the post being edited
@@ -181,4 +181,4 @@ const FeedPage = () => {
   );
 };
 
-export default FeedPage;
+export default FeedBack;

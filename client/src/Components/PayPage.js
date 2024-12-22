@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import Library from '../Images/Library.jpeg'
+import check from '../Images/check.png'
 
 import oo from '../Images/6.jpeg';  // Import the background image
 
@@ -39,7 +39,7 @@ function PayPage() {
 
           <img
 
-            src={Library} // Replace with your own image URL
+            src={check} // Replace with your own image URL
 
             alt="Success Icon"
 
@@ -49,34 +49,7 @@ function PayPage() {
 
         </div>
 
-        <button
-
-          onClick={handleGoBack}
-
-          style={{
-
-            padding: "10px 20px",
-
-            fontSize: "1rem",
-
-            color: "#fff",
-
-            background: "#007bff",
-
-            border: "none",
-
-            borderRadius: "5px",
-
-            cursor: "pointer",
-
-          }}
-
-        >
-
-          Done
-
-        </button>
-
+       
       </div>
 
     </div>

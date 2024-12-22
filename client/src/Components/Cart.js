@@ -2,7 +2,6 @@ import { useSelector, useDispatch } from 'react-redux';
 import { removeFromCart, updateCartQuantity } from '../Features/PostSlice'; // Import the action to update quantity
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import VisaPayment from './VisaPayment';
 
 const Cart = () => {
   const cart = useSelector((state) => state.posts.cart); // Ensure this matches your state structure
@@ -15,6 +14,7 @@ const Cart = () => {
   const handleVisaPayment = () => {
     navigate('/visapayment'); // Navigate to visapayment page
   };
+
   const handleCalculate = () => {
     if (cart && cart.length > 0) {
       const total = cart.reduce((acc, item) => {
@@ -26,7 +26,6 @@ const Cart = () => {
     }
   };
 
-
   useEffect(() => {
     if (!isLogin) {
       navigate('/login');
@@ -34,12 +33,19 @@ const Cart = () => {
   }, [isLogin, navigate]);
 
   const handleDelete = (index) => {
-    dispatch(removeFromCart(index)); // Dispatch action to remove book from cart by index
+    const item = cart[index];
+    if (item.quantity > 1) {
+      // Reduce quantity by 1
+      dispatch(updateCartQuantity({ index, quantity: item.quantity - 1 }));
+    } else {
+      // Remove item if quantity is 1
+      dispatch(removeFromCart(index));
+    }
   };
 
-  const handleQuantityChange = (index, quantity) => {
-    if (quantity >= 0) {
-      dispatch(updateCartQuantity({ index, quantity })); // Dispatch action to update quantity
+  const handleQuantityChange = (index, newQuantity) => {
+    if (newQuantity >= 1) {
+      dispatch(updateCartQuantity({ index, quantity: newQuantity })); // Dispatch action to update quantity
     }
   };
 
@@ -48,8 +54,15 @@ const Cart = () => {
   }
 
   return (
-    <div className="cartContainer">
-      <h1 className="header">Your Cart</h1>
+    <div className="cartContainer" style={{
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundAttachment: 'fixed',
+      minHeight: '100vh', // Make sure it covers the full height
+      justifyContent: 'center',
+      alignItems: 'center',
+    }}>
+      <h1>Your Cart</h1>
       {cart.map((item, index) => (
         <div key={index} className="itemCard">
           <img src={item.pic} alt={item.title} className="itemImage" />
@@ -60,7 +73,7 @@ const Cart = () => {
               <strong>Quantity:</strong>
               <input
                 type="number"
-                min="0"
+                min="1"
                 value={item.quantity || 1}
                 onChange={(e) => handleQuantityChange(index, parseInt(e.target.value, 10))}
                 className="quantityInput"
@@ -86,15 +99,12 @@ const Cart = () => {
         </div>
       )}
 
-      <br/>
-      <br/>
+      <br />
+      <br />
 
       <button onClick={handleVisaPayment} color="primary" className="button">
-        payment
+        Payment
       </button>
-
-      
-     
     </div>
   );
 };

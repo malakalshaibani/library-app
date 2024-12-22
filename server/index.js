@@ -11,7 +11,7 @@ dotenv.config();
 const app = express();
 app.use(express.json());
 app.use(cors());
-const con = `mongodb+srv://${process.env.MONGO_USERNAME}:${process.env.MONGO_PASSWORD}@booklibrary.nkt88.mongodb.net/${process.env.MONGO_DATABASE}?retryWrites=true&w=majority&appName=bookLibrary`;
+const con = `mongodb+srv://${process.env.MONGO_USERNAME}:${process.env.MONGO_PASSWORD}@booklibrary.nkt88.mongodb.net/${process.env.MONGO_DATABASE}?retryWrites=true&w=majority&appName=booklibrary`;
 
 
 mongoose.connect(con);

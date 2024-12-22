@@ -113,7 +113,7 @@ img, .book-image {
 /* Icon Style */
 .search-icon {
   position: absolute;
-  right: 40px; /* Position the icon to the right */
+  right: 10px; /* Position the icon to the right */
   top: 40%;
   transform: translateY(-50%);
   font-size: 20px; /* Smaller icon size */
@@ -677,7 +677,7 @@ body {
 
 /* General Styles */
 .homepage-container {
-  background-color: #fdf8e3;
+  
   min-height: 100vh;
   padding: 20px;
   font-family: 'Arial', sans-serif;

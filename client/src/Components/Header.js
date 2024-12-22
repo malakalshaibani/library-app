@@ -32,19 +32,14 @@ const Header = () => {
 
         {/* Navigation Links */}
         <NavItem className="ml-3">
-          <Link to="/home" className="nav-link">Home</Link>
+          <Link to="/" className="nav-link">Home</Link>
         </NavItem>
 
         <NavItem className="ml-3">
           <Link to="/cart" className="nav-link">Cart</Link>
         </NavItem>
 
-        {/* Conditionally show the "AddBooks" page link if the user is an admin */}
-        {user && user.role === 'admin' && (
-          <NavItem className="ml-3">
-            <Link to="/addbooks" className="nav-link">Add Books</Link>
-          </NavItem>
-        )}
+       
 
         <NavItem className="ml-3">
           <Link className="nav-link" onClick={handleLogout}>Logout</Link>

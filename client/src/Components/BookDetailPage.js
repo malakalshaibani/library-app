@@ -35,7 +35,15 @@ const BookDetailPage = () => {
   };
 
   return (
-    <div className="book-detail-page">
+    <div className='login-container' style={{
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundAttachment: 'fixed',
+          minHeight: '100vh', // Make sure it covers the full height
+          //display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+        }}>
       <div className="book-detail-container">
         <div className="book-image-container">
           <img src={book.pic} alt={book.title} className="book-image" />

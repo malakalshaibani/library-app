@@ -3,9 +3,9 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Register from "./Components/Register ";
 import BookDetailPage from "./Components/BookDetailPage";
 import FeedBack from "./Components/FeedBack";
-import Logopage from "./Components/Logopage";
+//import Logopage from "./Components/Logopage";
 import Cart from './Components/Cart';
-import AddBooks from './Components/AddBooks'; // Assuming you have an AddBooks component
+//import AddBooks from './Components/AddBooks'; // Assuming you have an AddBooks component
 import Profile from "./Components/Profile";
 import { useSelector } from "react-redux";
 import Header from './Components/Header';
@@ -26,14 +26,13 @@ const App = () => {
 
         <Row className="App">
           <Routes>
-            {/* Show LogoPage as the first page */}
-            <Route path="/" element={<Logopage />} />
+           
 
             {/* Profile route */}
             <Route path="/profile" element={<Profile />} />
 
             {/* Home route */}
-            <Route path="/home" element={<Home />} />
+            <Route path="/" element={<Home />} />
 
             {/* Register route */}
             <Route path="/register" element={<Register />} />
@@ -45,7 +44,7 @@ const App = () => {
             <Route path="/book/:bookId" element={<BookDetailPage />} />
 
             {/* Feedback page */}
-            <Route path="/FeedBack" element={<FeedBack />} />
+            <Route path="/FeedBack" element={<FeedBack  />} />
 
             {/* Cart route */}
             <Route path="/cart" element={<Cart />} />
@@ -55,10 +54,7 @@ const App = () => {
 
             PayPage
 
-            {/* Only show AddBooks route if the user is an admin */}
-            {user && user.role === 'admin' && (
-              <Route path="/addbooks" element={<AddBooks />} />
-            )}
+          
           </Routes>
         </Row>
       </Router>
